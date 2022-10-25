@@ -6,6 +6,8 @@ public class NotAnotherSchachtel
 	
 	public static void main(String[] args) 
 	{
+		schachtel = new char[12][10];
+		
 		System.out.print(" ");
 		for(int i = 0; i < schachtel[0].length; i++)
 		{
