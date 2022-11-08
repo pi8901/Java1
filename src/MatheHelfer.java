@@ -39,5 +39,4 @@ public class MatheHelfer
 		}
 		System.out.print(" Median: " + arr[arr.length/2] + "\n");
 	}
-
 }

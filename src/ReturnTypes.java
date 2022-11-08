@@ -5,7 +5,7 @@ public class ReturnTypes
 
 	public static void main(String[] args) 
 	{
-		int[] values = new int[] { 3, 1, 7, 99, -78, 22, 100, 5, -6 };
+		int[] values = new int[] { -15, -25, 26, 36, 37, 12, 15, -31, 36, -15, -33 };
 		System.out.println(statistics(values));
 	}
 	
@@ -14,14 +14,13 @@ public class ReturnTypes
 		String s = "";
 		s = "Number of values: " + arr.length;
 		s = s + "\nNumber of negative values removed: " + (arr.length - removeBelowZero(arr).length);
-		arr = removeBelowZero(arr);
+		arr = removeBelowZero(arr);	
 		s = s + "\nHighest value in dataset: " + highest(arr);
 		s = s + "\nLowest value in dataset: " + lowest(arr);
 		s = s + "\nLowest is " + percentageOf(lowest(arr), highest(arr)) + " % of highest value";
 		return s;
 	}
 	
-	//Kann man auch anders machen mit ner for schleife
 	public static int[] removeBelowZero(int[] arr)
 	{
 		return Arrays.stream(arr).filter(s -> s >= 0).toArray();
