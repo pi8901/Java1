@@ -1,11 +1,11 @@
 public class CharacterSheet
 {
 	
-	public static String firstName;
-	public static String lastName;
-	public static String story;
-	public static int type;
-	public static int level;
+	public String firstName;
+	public String lastName;
+	public String story;
+	public int type;
+	public int level;
 
 	public static void main(String[] args) 
 	{
@@ -35,6 +35,6 @@ public class CharacterSheet
 	
 	public static String createCharacterStats(CharacterSheet x)
 	{
-		return firstName + " " + lastName + " is a " + translateType(type) + " level " + level + " " + story;
+		return x.firstName + " " + x.lastName + " is a " + translateType(x.type) + " level " + x.level + " " + x.story;
 	}
 }
