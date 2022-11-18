@@ -5,7 +5,7 @@ public class Inventory
 	
 	public static void main(String[] args)
 	{
-		
+
 	}
 	
 	public void setBagSize(int size)
@@ -39,7 +39,7 @@ public class Inventory
 	{
 		for(int i = 0; i < bag.length; i++)
 		{
-			if(bag[i].type == type && bag[i] != null)
+			if(bag[i] != null && bag[i].type == type)
 			{
 				System.out.println(bag[i].describe());
 			}
@@ -50,7 +50,7 @@ public class Inventory
 	{
 		for(int i = 0; i < bag.length; i++)
 		{
-			if(bag[i].quality == q && bag[i] != null)
+			if(bag[i] != null && bag[i].quality == q)
 			{
 				System.out.println(bag[i].describe());
 			}
